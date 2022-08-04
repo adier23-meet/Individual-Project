@@ -63,6 +63,12 @@ def signout():
     return redirect(url_for('signin'))
 
 
+@app.route('/about')
+def about():
+    return render_template("about.htm")
+
+
+
 
 @app.route('/home')
 def home():
