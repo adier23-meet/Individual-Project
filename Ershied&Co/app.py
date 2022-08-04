@@ -76,6 +76,12 @@ def home():
 
 
 
+@app.route('/contact')
+def contact():
+    return render_template("contact.htm")
+
+
+
 
 
 if __name__ == '__main__':
