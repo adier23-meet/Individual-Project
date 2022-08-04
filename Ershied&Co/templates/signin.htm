@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="background-image: url('static/mmm.png');">
+<head>
+	<body>
+	<form method="POST" action="/">
+        <!-- Heading -->
+        <center>
+        <h4 style="font-size: 31px;">
+        Log in to your account
+        </h4>
+
+        <!-- Subheading -->
+        <p style="font-size: 23px;">
+        Please fill up your information below to sign in.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label style="color: black;" "font-size: 19px;">Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" >
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label style="font-size: 19px;">Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input style="font-size: 16px;" type="submit"/>
+        </div>
+    </form>
+    <br>
+    <a href='/signup'>Don't have an account? Sign Up</a>
+</center>
+</body>
+</html>

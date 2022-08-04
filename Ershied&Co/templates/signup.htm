@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url('static/mmm.png');">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body>
+    <form method="POST" action="/signup">
+        <!-- Heading -->
+        <center>
+        <h4 style="font-size: 31px;">
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p style="font-size: 23px;">
+            Please fill up your information below to sign up.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label style="color: black;" "font-size: 19px;">Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label style="font-size: 19px;">Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+      
+        <!-- Button -->
+        <div>
+            <input style="font-size: 16px;" type="submit"/>
+        </div>
+    </form>
+
+    <font color="red">{{ error }}</font>
+    <br>
+    <a style=" color: #0000FF;" style="font-size: 14px;" href="/">Already have an account? Sign In</a>
+    </center>
+</body>
+</html>
